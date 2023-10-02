@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class UrubucoreConfig(AppConfig):
+class UrubuappConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'urubucore'
+    name = 'urubuapp'
