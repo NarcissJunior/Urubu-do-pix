@@ -1,4 +1,6 @@
 from django.shortcuts import render
+from .models import User
 
 def home (request):
-    return render(request, 'index.html')
+    user = User.objects.all()
+    return user
