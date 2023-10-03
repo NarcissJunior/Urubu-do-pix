@@ -10,7 +10,7 @@ class UserModel(models.Model):
     
 class WalletModel(models.Model):
     amount = models.CharField(max_length=30)
-    owner = models.ForeignKey("User", on_delete=models.CASCADE,)
+    owner = models.ForeignKey("UserModel", on_delete=models.CASCADE,)
     last_updated = models.DateTimeField("last updated")
 
     def last_transaction(self):
